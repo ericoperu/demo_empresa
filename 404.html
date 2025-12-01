@@ -6,6 +6,95 @@
     <title>404</title>
 </head>
 <body>
-    <h1>404 - File not Found</h1>
+<style>
+        .error-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    min-height: 100vh;
+    padding: 20px;
+    text-align: center;
+    font-family: Arial, sans-serif;
+    background-color: #f8f9fa;
+}
+
+.domain {
+    font-size: 80px;
+    font-weight: bold;
+    margin: 0 0 40px 0;
+    color: #333;
+    letter-spacing: 2px;
+}
+
+.error-code {
+    font-size: 120px;
+    font-weight: 900;
+    margin: 0;
+    color: #dc3545;
+    line-height: 1;
+}
+
+.error-title {
+    font-size: 32px;
+    margin: 10px 0;
+    color: #495057;
+}
+
+.error-message {
+    font-size: 20px;
+    color: #6c757d;
+    max-width: 600px;
+    margin: 0 auto 40px;
+    line-height: 1.5;
+}
+
+.home-button {
+    display: inline-block;
+    padding: 15px 40px;
+    background-color: #0066cc;
+    color: white;
+    text-decoration: none;
+    border-radius: 8px;
+    font-size: 18px;
+    font-weight: 600;
+    transition: background-color 0.3s, transform 0.2s;
+}
+
+.home-button:hover {
+    background-color: #0052a3;
+    transform: translateY(-2px);
+}
+
+@media (max-width: 768px) {
+    .domain {
+        font-size: 50px;
+        margin-bottom: 30px;
+    }
+    
+    .error-code {
+        font-size: 80px;
+    }
+    
+    .error-title {
+        font-size: 24px;
+    }
+    
+    .error-message {
+        font-size: 18px;
+        padding: 0 15px;
+    }
+}
+</style>    
+    <div class="error-container">
+    <div class="domain">lab.net.pe</div>
+    <div class="error-code">404</div>
+    <h1 class="error-title">Archivo No Encontrado</h1>
+    <p class="error-message">
+        La página que estás buscando no existe o está temporalmente no disponible.
+    </p>
+    <a href="/" class="home-button">Volver al Inicio</a>
+</div>
 </body>
+
 </html>
