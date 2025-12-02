@@ -2,15 +2,15 @@
   "client": "demo_empresa",
   "stats": {
     "2025-12": {
-      "successful": 7,
+      "successful": 8,
       "failed": 0,
-      "total": 7
+      "total": 8
     }
   },
   "allTime": {
-    "successful": 7,
+    "successful": 8,
     "failed": 0,
-    "total": 7
+    "total": 8
   },
-  "lastUpdate": "2025-12-02T14:35:08.742Z"
+  "lastUpdate": "2025-12-02T14:37:50.333Z"
 }
