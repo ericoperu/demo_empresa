@@ -1,13 +1,19 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>404</title>
+    <title>404 - lab.net.pe</title>
 </head>
 <body>
 <style>
-        .error-container {
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.error-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -43,10 +49,33 @@
 
 .error-message {
     font-size: 20px;
-    color: #00A19E;
+    color: #666;
     max-width: 600px;
-    margin: 0 auto 40px;
+    margin: 0 auto 30px;
     line-height: 1.5;
+}
+
+.info-box {
+    background-color: #e6f7f7;
+    border-left: 4px solid #00A19E;
+    padding: 20px 30px;
+    margin: 20px 0 40px;
+    border-radius: 8px;
+    max-width: 600px;
+    box-shadow: 0 2px 8px rgba(0, 161, 158, 0.1);
+}
+
+.info-box p {
+    margin: 10px 0;
+    color: #333;
+    font-size: 16px;
+    line-height: 1.6;
+    text-align: left;
+}
+
+.info-box strong {
+    color: #00A19E;
+    font-size: 18px;
 }
 
 .home-button {
@@ -59,11 +88,13 @@
     font-size: 18px;
     font-weight: 600;
     transition: background-color 0.3s, transform 0.2s;
+    box-shadow: 0 4px 12px rgba(0, 161, 158, 0.3);
 }
 
 .home-button:hover {
-    background-color: #00A59E;
+    background-color: #008a87;
     transform: translateY(-2px);
+    box-shadow: 0 6px 16px rgba(0, 161, 158, 0.4);
 }
 
 @media (max-width: 768px) {
@@ -84,24 +115,24 @@
         font-size: 18px;
         padding: 0 15px;
     }
+    
     .info-box {
-    background-color: #e8f4f8;
-    border-left: 4px solid #2196F3;
-    padding: 15px 20px;
-    margin: 20px 0;
-    border-radius: 4px;
-}
-
-.info-box p {
-    margin: 8px 0;
-    color: #333;
-    font-size: 14px;
-    line-height: 1.6;
-}
-
-.info-box strong {
-    color: #1976D2;
-}
+        padding: 15px 20px;
+        margin: 15px 0 30px;
+    }
+    
+    .info-box p {
+        font-size: 14px;
+    }
+    
+    .info-box strong {
+        font-size: 16px;
+    }
+    
+    .home-button {
+        padding: 12px 30px;
+        font-size: 16px;
+    }
 }
 </style>    
    <div class="error-container">
@@ -120,7 +151,4 @@
     <a href="/" class="home-button">Volver al Inicio</a>
 </div>
 </body>
-
 </html>
-
-
